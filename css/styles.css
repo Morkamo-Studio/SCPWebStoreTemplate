@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+/* #region General */
+
+:root {
+    --auth-button-color: rgb(0, 119, 217);
+    --auth-button-color-shadow: 0, 119, 217;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #313131;
+    color: #fff;
+    min-height: 100%;
+    padding: 0px 1px 0px 1px;
+    gap: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-style: hidden;
+}
+
+/* #endregion */
+
+/* #region Header Box */
+.header-box {
+
+    background-color: #1b1b1b;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content-logo-box {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 30px 20px 30px;
+    gap: 10px;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.web-site-logo {
+    width: 60px;
+    height: 60px;
+}
+
+.header-content-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 40px;
+    gap: 25px;
+    font-weight: 700;
+}
+
+.header-content-navigation a {
+    border-style: hidden;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border-width: 1px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0);
+}
+
+.header-content-navigation a:hover {
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+
+.header-content-navigation .authButton {
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--auth-button-color);
+    font-weight: 700;
+    font-size: 17px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    box-shadow: 0px 2px 4px rgba(var(--auth-button-color-shadow), 0);
+}
+
+.header-content-navigation .authButton:hover {
+    box-shadow: 0px 2px 6px rgba(var(--auth-button-color-shadow), 0.7);
+    transform: translateY(-2px);
+}
+
+/* #endregion */
+
+/* #region Products Box */
+.products-box {
+    min-height: 500px;
+    background-color: #0e0e0e;
+    flex-grow: 1;
+}
+/* #endregion */
+
+/* #region Footer Box */
+.footer-box {
+    height: 100px;
+    background-color: #1b1b1b;
+}
+/* #endregion */
