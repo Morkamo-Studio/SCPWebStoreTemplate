@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+/* #region General */
+
+:root {
+    --base-button-color: rgb(0, 119, 217);
+    --link-highlight-color: rgb(31, 154, 255);
+    --base-button-color-shadow: 0, 119, 217;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #313131;
+    color: #fff;
+    min-height: 100%;
+    padding: 0px 1px 0px 1px;
+    gap: 1px;
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-style: hidden;
+}
+
+/* #endregion */
+
+/* #region Header Box */
+.header-box {
+    background-color: #1b1b1b;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+}
+
+.header-content-logo-box {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 30px 20px 30px;
+    gap: 10px;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.header-content-logo-text {
+    display: flex;
+    flex-direction: row;
+    user-select: none;
+}
+
+.header-content-logo-text-letter {
+    transition: transform 0.3s ease;
+}
+
+.header-content-logo-text-letter:hover {
+    transform: translateY(-10px);
+}
+
+.header-content-logo-text-space {
+    width: 8px;
+}
+
+.web-site-logo {
+    width: 70px;
+    height: 70px;
+}
+
+@keyframes spining-web-logo {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.web-site-logo.spinWebLogo {
+    animation: spining-web-logo 0.6s ease forwards;
+}
+
+/* #endregion */
+
+/* #region Main Box */
+.main-box {
+    min-height: 500px;
+    background-color: #0e0e0e;
+    flex-grow: 1;
+    padding: 50px 100px;
+}
+
+.main-box-title {
+    font-size: 40px;
+    font-weight: 700;
+    justify-self: center;
+    padding-bottom: 50px;
+    user-select: none;
+}
+
+.main-box-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1330px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.info-card {
+    height: auto;
+    background-color: #232323;
+    padding: 30px 70px;
+
+    border: 1px solid;
+    border-radius: 40px;
+    border-color: #494949;
+
+    box-shadow: 2px 2px 6px rgb(208, 208, 208, 0.2);
+
+    user-select: none;
+}
+
+.info-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.to-general-page-button {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-self: center;
+    margin-top: 20px;
+
+    width: 30%;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 0;
+    color: #fff;
+    background-color: var(--base-button-color);
+    box-shadow: 0px 0px 4px rgba(0, 136, 255, 1)
+}
+
+.to-general-page-button:hover {
+    transform: scale(1.05);
+}
+
+/* #endregion */
+
+/* #region Footer Box */
+.footer-box {
+    height: 120px;
+    background-color: #1b1b1b;
+}
+
+.footer-box-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    padding: 20px 50px;
+    color: #7b7b7b;
+}
+
+.footer-box-content a,
+.link-to-discord-server {
+    color: #7b7b7b;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    transition: color 0.3s ease;
+}
+
+.link-to-discord-server {
+    color: #8f5353;
+}
+
+.footer-box-content-right-part a:hover {
+    color: var(--link-highlight-color);
+}
+
+/* #endregion */

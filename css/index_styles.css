@@ -257,16 +257,6 @@ button {
     transition: color 0.3s ease;
 }
 
-
-
-.footer-box-content-left-part {
-    
-}
-
-.footer-box-content-right-part {
-    
-}
-
 .footer-box-content-right-part a:hover {
     color: var(--link-highlight-color);
 }
